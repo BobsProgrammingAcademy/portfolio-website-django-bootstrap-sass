@@ -1,0 +1,207 @@
+// custom variables
+$primary: #411175;
+$light: #ffffff;
+$line-height: 1px;
+
+@import '../node_modules/bootstrap/scss//bootstrap.scss';
+@import '../node_modules/material-icons/iconfont/material-icons.css';
+@import url(//fonts.googleapis.com/css?family=Montserrat:300:400:500:700:800);
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.btn-light {
+  color: $primary;
+}
+
+.btn-light {
+  &:hover {
+    background-color: transparent;
+    color: $light;
+  }
+}
+
+.btn-outline-light {
+  &:hover {
+    color: $primary;
+  }
+}
+
+
+/* ---------- ICONS ---------- */
+
+a {
+  .material-icons-outlined {
+    font-size: 40px;
+  }
+}
+
+.contact-icon {
+  font-size: 30px;
+}
+
+.navbar-toggler {
+  .material-icons-outlined {
+    color: $light;
+    font-size: 30px;
+  }
+}
+
+.navbar-toggler {
+  color: transparent;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: $line-height;
+}
+
+.about {
+  .material-icons-outlined {
+    font-size: 50px;
+  }
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+.nav-link {
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero-image {
+  height: 500px;
+}
+
+.hero-not-found {
+  height: 100px;
+}
+
+.header {
+  position: relative;
+  background: linear-gradient(60deg, rgba(65,17,117,1) 0%, rgba(112,25,117,1) 100%);
+  color: $light;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-icon {
+  $size: 58px;
+  width: $size;
+  height: $size;
+  vertical-align: middle;
+}
+
+.about {
+  font-size: 40px;
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+.card {
+  img {
+    height: 250px;
+  }
+}
+
+.project-not-found {
+  height: 250px;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.custom-gradient {
+  position: relative;
+  background: linear-gradient(60deg, rgba(65,17,117,1) 0%, rgba(112,25,117,1) 100%);
+  color: $light;
+}
+
+
+
+/* ---------- WAVES ---------- */
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
+}
+
+// Animation
+
+.parallax {
+  use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  }
+}
+
+.parallax {
+  use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+}
+
+.parallax {
+  use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+}
+
+.parallax {
+  use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+}
+
+.parallax {
+  use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+}
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/* Shrinking waves for mobile */
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  .hero-image {
+    height: 50%;
+  }
+}
+
