@@ -1,6 +1,6 @@
 import tempfile
 from django.test import TestCase
-from .models import Hero, About, Tag
+from .models import Hero, About, Tag, Contact
 
 
 class HeroModelUnitTestCase(TestCase):
@@ -39,3 +39,16 @@ class TagModelUnitTestCase(TestCase):
     def test_tag_model(self):
         data = self.tag
         self.assertIsInstance(data, Tag)
+
+
+class ContactModelUnitTestCase(TestCase):
+    def setUp(self):
+        self.contact = Contact.objects.create(
+            address='Dublin, Ireland',
+            email='bob@test.com',
+            phone='123456789'
+        )
+
+    def test_contact_model(self):
+        data = self.contact
+        self.assertIsInstance(data, Contact)
