@@ -1,6 +1,6 @@
 import tempfile
 from django.test import TestCase
-from .models import Hero, About, Tag, Contact
+from .models import Hero, About, Tag, Contact, Footer
 
 
 class HeroModelUnitTestCase(TestCase):
@@ -52,3 +52,14 @@ class ContactModelUnitTestCase(TestCase):
     def test_contact_model(self):
         data = self.contact
         self.assertIsInstance(data, Contact)
+
+
+class FooterModelUnitTestCase(TestCase):
+    def setUp(self):
+        self.footer = Footer.objects.create(
+            copyright="Copyright © 2023 Bob's Programming Academy.",
+        )
+
+    def test_footer_model(self):
+        data = self.footer
+        self.assertIsInstance(data, Footer)
