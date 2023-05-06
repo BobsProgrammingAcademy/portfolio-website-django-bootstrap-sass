@@ -1,6 +1,6 @@
 import tempfile
 from django.test import TestCase
-from .models import Hero, About, Tag, Contact, Footer
+from .models import Hero, About, Tag, Project, Contact, Footer
 
 
 class HeroModelUnitTestCase(TestCase):
@@ -39,6 +39,21 @@ class TagModelUnitTestCase(TestCase):
     def test_tag_model(self):
         data = self.tag
         self.assertIsInstance(data, Tag)
+
+
+class ProjectModelUnitTestCase(TestCase):
+    def setUp(self):
+        self.tag = Tag.objects.create(name='Django')
+        self.project = Project.objects.create(
+            name='Lorem ipsum dolor sit amet',
+            description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt quis odio id.',
+            link='http://test.com/'
+        )
+        self.project.tags.add(self.tag)
+
+    def test_project_model(self):
+        data = self.project
+        self.assertIsInstance(data, Project)
 
 
 class ContactModelUnitTestCase(TestCase):
