@@ -25,7 +25,7 @@ Install the following prerequisites:
 
 ## Installation
 
-### 1. Create a virtual environment
+#### 1. Create a virtual environment
 
 From the **root** directory run:
 
@@ -33,7 +33,7 @@ From the **root** directory run:
 python -m venv venv
 ```
 
-### 2. Activate the virtual environment
+#### 2. Activate the virtual environment
 
 From the **root** directory run:
 
@@ -49,7 +49,7 @@ On Windows:
 venv\scripts\activate
 ```
 
-### 3. Install required dependencies
+#### 3. Install required dependencies
 
 From the **root** directory run:
 
@@ -66,7 +66,7 @@ cd static
 npm install
 ```
 
-### 4. Run migrations
+#### 4. Run migrations
 
 From the **root** directory run:
 
@@ -77,7 +77,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 5. Create an admin user to access the Django Admin interface
+#### 5. Create an admin user to access the Django Admin interface
 
 From the **root** directory run:
 
@@ -99,13 +99,11 @@ python manage.py runserver
 
 Go to http://127.0.0.1:8000/ to view the application.
 
-
 ## Add data to the application
 
 Add data through Django Admin.
 
 Go to http://127.0.0.1:8000/admin to access the Django Admin interface and sign in using the admin credentials.
-
 
 ## Customize the application
 
@@ -128,7 +126,6 @@ To modify the colors in the application, make changes in the ```static/sass/styl
 ### Changing Logo
 
 To modify the logo in the application, make changes in the ```templates/index.html``` file.
-
 
 ## Copyright and License
 
