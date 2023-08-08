@@ -27,5 +27,5 @@ jobs:
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.5.1
         with:
-          source: ./sass/styles.scss
-          destination: ./css/styles.css
+          source: ./static/sass/styles.scss
+          destination: ./static/css/styles.css
