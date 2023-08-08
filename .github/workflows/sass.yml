@@ -1,0 +1,31 @@
+name: Sass CI
+
+on:
+  push:
+    branches: ['master']
+
+  pull_request:
+    branches: ['master']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v3
+        with:
+          ref: master
+          fetch-depth: 10
+          submodules: 10
+
+      - name: Install Dependencies
+        run: |
+          cd static
+          npm install
+
+      - name: Compile CSS from SCSS files
+        uses: gha-utilities/sass-build@v0.5.1
+        with:
+          source: ./sass/styles.scss
+          destination: ./css/styles.css
