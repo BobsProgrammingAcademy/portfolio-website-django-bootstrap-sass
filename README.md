@@ -1,6 +1,6 @@
 # Freelance Developer Portfolio Website
 
-This is a freelance developer portfolio website built using **Django 4**, **HTML 5**, **CSS 3**, **Bootstrap 5** and **Sass**.
+This is a freelance developer portfolio website built using **Django 4**, **HTML 5**, **CSS 3**, **Bootstrap 5**, and **Sass**.
 
 ![plot](https://github.com/BobsProgrammingAcademy/portfolio-website-django4-bootstrap-5/blob/master/static/images/portfolio.png?raw=true)
 
