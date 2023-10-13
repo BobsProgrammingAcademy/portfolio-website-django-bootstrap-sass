@@ -21,7 +21,8 @@ Install the following prerequisites:
 1. [Python 3.8-3.11](https://www.python.org/downloads/)
 <br> This project uses **Django v4.2.4**. For Django to work, you must have a correct Python version installed on your machine. More information [here](https://django.readthedocs.io/en/stable/faq/install.html).
 2. [Node.js](https://nodejs.org/en/)
-3. [Visual Studio Code](https://code.visualstudio.com/download) with the **Live Sass Compiler** extension.
+3. [Visual Studio Code](https://code.visualstudio.com/download) with the **Live Sass Compiler** extension.<br>
+
 [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) allows us to compile Sass files to CSS files in real-time. It will watch a Sass file for changes, and then it will automatically compile that Sass file into a CSS file whenever a change is made and saved.
 
 
