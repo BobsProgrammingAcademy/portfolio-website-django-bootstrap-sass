@@ -1,6 +1,6 @@
 # Freelance Developer Portfolio Website
 
-This is a freelance developer portfolio website built using **Django 4**, **HTML 5**, **CSS 3**, **Bootstrap 5**, and **Sass**.
+This freelance developer portfolio website is built using **Django 4**, **HTML 5**, **CSS 3**, **Bootstrap 5**, and **Sass**.
 
 ![plot](https://github.com/BobsProgrammingAcademy/portfolio-website-django4-bootstrap-5/blob/master/static/images/portfolio.png?raw=true)
 
@@ -23,14 +23,14 @@ Install the following prerequisites:
 2. [Node.js](https://nodejs.org/en/)
 3. [Visual Studio Code](https://code.visualstudio.com/download) with the **Live Sass Compiler** extension.<br>
 
-[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) allows us to compile Sass files to CSS files in real-time. It will watch a Sass file for changes, and then it will automatically compile that Sass file into a CSS file whenever a change is made and saved.
+[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) allows us to compile Sass files to CSS files in real time. It will watch a Sass file for changes, and then it will automatically compile that Sass file into a CSS file whenever a change is made and saved.
 
 
 ### Installation
 
 #### 1. Create a virtual environment
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 python -m venv venv
@@ -38,7 +38,7 @@ python -m venv venv
 
 #### 2. Activate the virtual environment
 
-From the **root** directory run:
+From the **root** directory, run:
 
 On macOS:
 
@@ -54,13 +54,13 @@ venv\scripts\activate
 
 #### 3. Install required dependencies
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 cd static
@@ -71,7 +71,7 @@ npm install
 
 #### 4. Run migrations
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 python manage.py makemigrations
@@ -82,7 +82,7 @@ python manage.py migrate
 
 #### 5. Create an admin user to access the Django Admin interface
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 python manage.py createsuperuser
@@ -92,7 +92,7 @@ When prompted, enter a username, email, and password.
 
 ### Run the application
 
-From the **root** directory run:
+From the **root** directory, run:
 
 ```bash
 python manage.py runserver
