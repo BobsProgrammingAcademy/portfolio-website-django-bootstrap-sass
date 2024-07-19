@@ -14,7 +14,7 @@ This is a freelance developer portfolio website built using **Django 4**, **HTML
 - [Copyright and License](#copyright-and-license)
 
 
-### Prerequisites
+## Prerequisites
 
 Install the following prerequisites:
 
@@ -26,9 +26,9 @@ Install the following prerequisites:
 [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) allows us to compile Sass files to CSS files in real-time. It will watch a Sass file for changes, and then it will automatically compile that Sass file into a CSS file whenever a change is made and saved.
 
 
-### Installation
+## Installation
 
-#### 1. Create a virtual environment
+### 1. Create a virtual environment
 
 From the **root** directory, run:
 
@@ -36,7 +36,7 @@ From the **root** directory, run:
 python -m venv venv
 ```
 
-#### 2. Activate the virtual environment
+### 2. Activate the virtual environment
 
 From the **root** directory, run:
 
@@ -52,7 +52,7 @@ On Windows:
 venv\scripts\activate
 ```
 
-#### 3. Install required dependencies
+### 3. Install required dependencies
 
 From the **root** directory, run:
 
@@ -69,7 +69,7 @@ cd static
 npm install
 ```
 
-#### 4. Run migrations
+### 4. Run migrations
 
 From the **root** directory, run:
 
@@ -80,7 +80,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-#### 5. Create an admin user to access the Django Admin interface
+### 5. Create an admin user to access the Django Admin interface
 
 From the **root** directory, run:
 
@@ -90,7 +90,7 @@ python manage.py createsuperuser
 
 When prompted, enter a username, email, and password.
 
-### Run the application
+## Run the application
 
 From the **root** directory, run:
 
@@ -98,21 +98,21 @@ From the **root** directory, run:
 python manage.py runserver
 ```
 
-### View the application
+## View the application
 
 Go to http://127.0.0.1:8000/ to view the application.
 
-### Add data to the application
+## Add data to the application
 
 Add data through Django Admin.
 
 Go to http://127.0.0.1:8000/admin to access the Django Admin interface and sign in using the admin credentials.
 
-### Customize the application
+## Customize the application
 
 This section describes how to customize the application. 
 
-#### Changing Section Titles and Subtitles 
+### Changing Section Titles and Subtitles 
 
 #### 1. About
 
@@ -122,14 +122,14 @@ To modify the title and subtitle of the **About** section, make changes in the `
 
 To modify the title and subtitle of the **Projects** section, make changes in the ```templates/index.html``` file.
 
-#### Changing Colors
+### Changing Colors
 
 To modify the colors in the application, make changes in the ```static/sass/styles.scss``` file and compile the file using the **Live Sass Compiler**, which is a Visual Studio Code Extension. Remember to set the **savePath** option in the **settings.json** file (**liveSassCompile.settings.formats** section) to **static/css** so that the generated CSS file is stored in the static/css directory. 
 
-#### Changing Logo
+### Changing Logo
 
 To modify the logo in the application, make changes in the ```templates/index.html``` file.
 
-### Copyright and License
+## Copyright and License
 
 Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
