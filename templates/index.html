@@ -5,9 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Portfolio Website</title>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    
     <!-- Custom CSS -->
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    
   </head>
   <body>
     <div class="container-fluid px-0">
@@ -132,6 +136,7 @@
             </div>
           </div>
           <div class="container">
+            
             {% if about_data %}
               <div class="row">
                 
@@ -153,6 +158,7 @@
             {% else %}
               <h5 class="text-primary text-center">No Data</h5>
             {% endif %}
+            
           </div>
         </section>
         <!-- End About -->
@@ -170,6 +176,7 @@
             </div>
           </div>
           <div class="container">
+            
             {% if project_data %}
               <div class="row">
                 
@@ -208,6 +215,7 @@
             {% else %}
               <h5 class="text-primary text-center">No Data</h5>
             {% endif %}
+            
           </div>
         </section>
         <!-- End Projects -->
@@ -215,6 +223,7 @@
         <!-- Contact -->
         <section class="bg-primary p-5 p-sm-5 mt-5">
           <div class="container">
+            
             {% if contact_data %}
               <ul class="nav justify-content-center my-3">
                 {% for contact in contact_data %}
@@ -237,10 +246,12 @@
                     </a>
                   </li>
                 {% endfor %}
+                
               </ul>
             {% else %}
               <h5 class="bg-primary text-white text-center">No Data</h5>
             {% endif %}
+            
           </div>
         </section>
       <!-- End Contact-->
@@ -251,6 +262,7 @@
     
     <!-- Footer -->
     <footer class="text-center py-4">
+      
       {% if footer_data %}
         <div class="container px-5 mb-2">
           {% for footer in footer_data %}
@@ -260,6 +272,7 @@
       {% else %}
         <h5 class="text-primary text-center">No Data</h5>
       {% endif %}
+      
     </footer>
     <!-- End Footer -->
     
